@@ -9,27 +9,39 @@ SwiperCore.use(Pagination);
 const Slider = props => {
 
     return (
-        <Swiper slidesPerView={4}>
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>
+            <Swiper slidesPerView={1} 
+                breakpoints={{
+                    767:{
+                        slidesPerView: 2,
+                        centeredSlides:false,
+                    },
+                    1024:{
+                        slidesPerView:4,
+                        centeredSlides:false,
+                    },
+                }}
 
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>
+            >
+                <SwiperSlide>
+                    <Card/>
+                </SwiperSlide>
 
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>
+                <SwiperSlide>
+                    <Card/>
+                </SwiperSlide>
 
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>
+                <SwiperSlide>
+                    <Card/>
+                </SwiperSlide>
 
-            <SwiperSlide>
-                <Card/>            
-            </SwiperSlide>
-        </Swiper>
+                <SwiperSlide>
+                    <Card/>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <Card/>            
+                </SwiperSlide>
+            </Swiper>
     )
 }
 
