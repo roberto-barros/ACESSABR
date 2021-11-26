@@ -1,12 +1,17 @@
+@import '../../styles/responsive.scss';
+
 .home {
 
     &__container {
         display: flex;
         width: 100%;
+        flex-wrap: wrap;
     }
 
     &__col {
         width: 50%;
+
+        
     }
 
     &__title {
@@ -35,5 +40,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: 4rem 0;
+    }
+
+    @media (max-width: $mobileLarge) {
+        &__col{
+            width: 100%;
+        }
     }
 }
