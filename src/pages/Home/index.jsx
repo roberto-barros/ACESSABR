@@ -6,15 +6,10 @@ import { useParams } from 'react-router';
 import { LocationContext } from '../../contexts/LocationContext';
 
 const PLACES = [
-    'Praça',
-    'Parque',
-    'Igreja',
-    'Hotel',
-    'Restaurante',
-    'Zoológico',
-    'Farmácia',
-    'Loja',
-    'Shopping'
+    'Mercados',
+    'Museus',
+    'Parques',
+    'Todos'
 ]
 
 const Home = () => {

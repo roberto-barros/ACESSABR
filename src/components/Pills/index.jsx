@@ -13,7 +13,7 @@ const Pills = ({ local, onClick, selected }) => {
 }
 
 Pills.propType = {
-    text: PropTypes.string.isRequired,
+    local: PropTypes.string.isRequired,
     onclick: PropTypes.func,
     selected: PropTypes.bool
 }
