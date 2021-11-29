@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useContext } from "react";
 import { FilterContext } from "../../contexts/FilterContext";
-import SwiperCore, { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "../Card";
-import api from '../../config/api';
+import api from "../../config/api";
 
 
-import 'swiper/swiper-bundle.css';
+import "swiper/swiper-bundle.css";
 
-SwiperCore.use(Pagination);
+SwiperCore.use([Pagination]);
 
 function Slider() {
 
